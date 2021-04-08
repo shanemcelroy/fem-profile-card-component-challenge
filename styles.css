@@ -1,0 +1,130 @@
+:root {
+  --clr-primary-200: hsl(185, 75%, 39%);
+  --clr-primary-400: hsl(227, 10%, 46%);
+  --clr-primary-600: hsl(229, 23%, 23%);
+
+  --clr-neutral: hsl(0, 0%, 59%);
+
+  --ff-primary: "Kumbh Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--ff-primary);
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Typography */
+
+.about__name {
+  font-weight: 700;
+}
+
+.about__age,
+.about__city {
+  color: var(--clr-primary-400);
+  font-weight: 400;
+}
+
+.about__name,
+.social__heading {
+  color: var(--clr-primary-600);
+  font-size: 1.125rem;
+}
+
+.social__desc {
+  color: var(--clr-neutral);
+}
+
+.social__desc {
+  font-size: 0.75rem;
+}
+
+/* Layout */
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-primary-200);
+  background-image: url("images/bg-pattern-top.svg"),
+    url("images/bg-pattern-bottom.svg");
+  background-position: top -38em left -46em, bottom -35em right -47em;
+  background-repeat: no-repeat;
+}
+
+.card {
+  width: 85%;
+  max-width: 20.5rem;
+  border-radius: 5%;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card__bubbles {
+  width: 100%;
+  z-index: -1;
+  flex-basis: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -3.5em;
+}
+
+.about__photo {
+  border: 5px solid white;
+  border-radius: 50%;
+  margin-bottom: 1.5em;
+  z-index: 0;
+}
+
+.about__city {
+  padding-top: 0.8em;
+  padding-bottom: 3.5em;
+  font-size: 0.9em;
+}
+
+.social-stats {
+  display: flex;
+  flex: 0 1 30%;
+  justify-content: space-around;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.social__heading {
+  margin-bottom: 0.5em;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-position: top -30em left -30em, bottom -30em right -35em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    background-position: top -30em left -15.5em, bottom -40em right -12em;
+  }
+}
