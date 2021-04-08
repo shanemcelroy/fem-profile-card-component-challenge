@@ -24,7 +24,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/mobilefirst-approach-to-the-html-css-profile-card-component-hmJpV1nyT]
 - Live Site URL: [https://shanemcelroy.github.io/fem-profile-card-component-challenge/]
 
 ## My process
